@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a1c17;
+}
+::-webkit-scrollbar-thumb {
+  background: #173f33;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #235747;
+}
+
+body {
+  background-color: #0a1c17;
+  color: #faf7f0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.editorial-heading {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  letter-spacing: -0.02em;
+}
+
+.glass-nav {
+  background: rgba(10, 28, 23, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(232, 224, 208, 0.08);
+}
+
+.glass-card {
+  background: rgba(15, 44, 35, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(232, 224, 208, 0.1);
+}
+
+.magnetic-btn {
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+    background-color 0.3s ease, border-color 0.3s ease;
+}
+.magnetic-btn:hover {
+  transform: translateY(-2px);
+}
